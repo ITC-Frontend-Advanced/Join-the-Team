@@ -1,0 +1,54 @@
+body {
+    background-image: url(Chiraz_Makeup/pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    font-size: 70%;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem ;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(245, 245, 245, 0.212);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0  .5rem 1rem rgba(0, 0, 0, 0.767);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: palevioletred;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+header .navbar a{
+     font-size: 2rem;
+     padding: 0 1.5rem ;
+     color: palevioletred;
+     text-decoration: none;
+
+}
+
+header .navbar a:hover{
+    color: pink;
+}
+
+header .icons a{
+    font-size: 2rem;
+    color: palevioletred;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+header .icons a:hover{
+     color: pink;
+}

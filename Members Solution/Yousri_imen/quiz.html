@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Quiz</title>
+</head>
+<script>
+
+    function submitAnswers() {
+        let count = 0;
+        if (!document.querySelector('input[name="Q1"]:checked')) {
+            document.getElementById("problem_Q1").innerHTML =
+            "<p class=\"text-red-500 bg-red-100 rounded-lg p-2 mt-2 \">Please answer all questions before submitting.</p>";
+        return;
+        }
+        if (!document.querySelector('input[name="Q2"]:checked')) {
+            document.getElementById("problem_Q2").innerHTML =
+            "<p class=\"text-red-500 bg-red-100 rounded-lg p-2 mt-2\">Please answer all questions before submitting.</p>";
+        return;
+        }
+        if (!document.querySelector('input[name="Q3"]:checked')) {
+            document.getElementById("problem_Q3").innerHTML =
+            "<p class=\"text-red-500 bg-red-100 rounded-lg p-2 mt-2\">Please answer all questions before submitting.</p>";
+        return;
+        }
+        if (!document.querySelector('input[name="Q4"]:checked')) {
+            document.getElementById("problem_Q4").innerHTML =
+            "<p class=\"text-red-500 bg-red-100 rounded-lg p-2 mt-2\">Please answer all questions before submitting.</p>";
+        return;
+        }
+
+        if (document.querySelector('input[name="Q1"]:checked')?.value === "10") { count++; }
+        if (document.querySelector('input[name="Q2"]:checked')?.value === "11") { count++; }
+        if (document.querySelector('input[name="Q3"]:checked')?.value === "100") { count++; }
+        if (document.querySelector('input[name="Q4"]:checked')?.value === "101") { count++; }
+
+        document.getElementById("result").innerText =
+        "Your score is: " + count;
+    }
+    function display(){
+        document.getElementById("quiz").style.display = "block";
+    }
+    function clearError(id){
+        document.getElementById(id).innerHTML = "";
+    }
+</script>
+<body>
+    <div class="">
+        <button class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 ml-[47%]"
+                onclick="display()">
+            Start Quiz
+        </button>
+        <div class="mt-5 rounded-lg  p-5 w-1/2 mx-auto shadow-lg " id="result"></div>
+        <div id="quiz" class="hidden">
+            <div class="mt-5 rounded-lg  p-5 w-1/2 mx-auto shadow-lg">
+                <div class="flex">
+                    <h3 class="font-bold mr-2 text-blue-500">Q1</h3>
+                    <p>What is 2 in binary?</p>
+                </div>
+                <div class="ml-5 mt-3">
+                    <input type="radio" name="Q1" value="110" onchange="clearError('problem_Q1')"> 110<br>
+                    <input type="radio" name="Q1" value="10" onchange="clearError('problem_Q1')"> 10<br>
+                    <input type="radio" name="Q1" value="11" onchange="clearError('problem_Q1')"> 11<br>
+                    <input type="radio" name="Q1" value="100" onchange="clearError('problem_Q1')"> 100<br>
+                    <p id="problem_Q1"></p>
+                </div>
+            </div>
+
+                    <div class="mt-5 rounded-lg  p-5 w-1/2 mx-auto shadow-lg">
+                <div class="flex">
+                    <h3 class="font-bold mr-2 text-blue-500">Q2</h3>
+                    <p>What is 3 in binary?</p>
+                </div>
+                <div class="ml-5 mt-3">
+                    <input type="radio" name="Q2" value="110" onchange="clearError('problem_Q2')"> 110<br>
+                    <input type="radio" name="Q2" value="10" onchange="clearError('problem_Q2')"> 10<br>
+                    <input type="radio" name="Q2" value="11" onchange="clearError('problem_Q2')"> 11<br>
+                    <input type="radio" name="Q2" value="100" onchange="clearError('problem_Q2')"> 100<br>
+                    <p id="problem_Q2"></p>
+                </div>
+            </div>
+
+                    <div class="mt-5 rounded-lg  p-5 w-1/2 mx-auto shadow-lg">
+                <div class="flex">
+                    <h3 class="font-bold mr-2 text-blue-500">Q3</h3>
+                    <p>What is 4 in binary?</p>
+                </div>
+                <div class="ml-5 mt-3">
+                    <input type="radio" name="Q3" value="110" onchange="clearError('problem_Q3')"> 110<br>
+                    <input type="radio" name="Q3" value="10" onchange="clearError('problem_Q3')"> 10<br>
+                    <input type="radio" name="Q3" value="11" onchange="clearError('problem_Q3')"> 11<br>
+                    <input type="radio" name="Q3" value="100" onchange="clearError('problem_Q3')"> 100<br>
+                    <p id="problem_Q3"></p>
+                </div>
+            </div>
+
+                    <div class="mt-5 rounded-lg  p-5 w-1/2 mx-auto shadow-lg">
+                <div class="flex">
+                    <h3 class="font-bold mr-2 text-blue-500">Q4</h3>
+                    <p>What is 5 in binary?</p>
+                </div>
+                <div class="ml-5 mt-3">
+                    <input type="radio" name="Q4" value="110" onchange="clearError('problem_Q4')"> 110<br>
+                    <input type="radio" name="Q4" value="10" onchange="clearError('problem_Q4')"> 10<br>
+                    <input type="radio" name="Q4" value="11" onchange="clearError('problem_Q4')"> 11<br>
+                    <input type="radio" name="Q4" value="101" onchange="clearError('problem_Q4')"> 101<br>
+                    <p id="problem_Q4"></p>
+                </div>
+            </div>
+            <button class="bg-green-400 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-5 ml-[47%]"
+                    onclick="submitAnswers()">
+                Submit Answers
+            </button>
+    </div>
+</body>
+</html>

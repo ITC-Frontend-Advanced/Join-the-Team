@@ -1,0 +1,218 @@
+body {
+    background-color: rgba(252, 235, 241, 0.973);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(252, 235, 241, 0.973);
+    padding: 1.5rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0  .5rem 1rem rgba(0, 0, 0, 0.767);
+}
+
+header .logo{
+    font-size: 2rem;
+    color: palevioletred;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+header .navbar a{
+     font-size: 1.5rem;
+     padding: 0 1.5rem ;
+     color: palevioletred;
+     text-decoration: none;
+
+}
+
+header .navbar a:hover{
+    color: pink;
+}
+
+header .icons a{
+    font-size: 1.5rem;
+    color: palevioletred;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+header .icons a:hover{
+    color: pink;
+}
+.boxs {
+    background-color:white;
+    width: 400px;
+    height: 420px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 3%;
+    display: flex;
+}
+ .boxs .img1 {
+    padding-left: 10%;
+ }
+
+.boxx {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.box1 {
+    background-color:white;
+    width: 140px;
+    height:195px;
+    padding: 20px;
+    display: flex;
+    margin-top: -34%;
+    margin-left: -160px;
+}
+.box2 {
+    background-color:white;
+    width: 130px;
+    height: 170px;
+    padding: 20px;
+    margin-top: -210px;
+    margin-left: -190px;
+    display: flex;
+    justify-content: center;
+}
+ .title {
+    margin-top: -430px;
+    margin-left: 60%;
+ }
+.title h2 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   margin-top: 5%;
+ }
+ .color-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 60%;
+  margin-top: 8%;
+}
+.color-item {
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: transform .25s ease;
+}
+
+.color-item:hover {
+  transform: scale(1.15);
+}
+
+.color-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .25s ease;
+}
+
+.color-item.selected .color-circle {
+  border: 2px solid black;
+  padding: 4px;
+  box-sizing: border-box;
+  transform: scale(1.18);
+}
+
+.color-item.more .color-circle {
+  background: none;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.iconss {
+    font-size: 36px;
+    margin-left: 83%;
+    margin-top: -21%;
+    color: black ;
+    text-decoration: none;
+}
+
+.prix h2 {
+    margin-left: 60%;  
+    margin-top: -8%;
+}
+.more h2 {
+    padding-left: 10%;
+}
+.box-container{
+  display: flex;
+  flex-wrap: wrap;        
+  gap: 10px;             
+  justify-content: center; 
+  padding: 20px;
+  margin-top: 500px
+}
+.box {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(204, 106, 183, 0.996);
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3 ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+.box :hover img {
+    transform: scale(1.1);
+}
+.box .icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+.box:hover {
+  transform: translateY(-8px);
+   box-shadow: 0 8px 20px rgba(204, 106, 183, 0.4);
+}
+.box:hover .icons {
+  bottom: 10px;
+  opacity: 1;
+}
+
+.box .icons a {
+  color: pink;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease , color 0.3 ease;
+}
+
+.box .icons a:hover {
+  color: #ffb6c1;
+  transform: scale(1.2);
+}
+  
+.box .content h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
