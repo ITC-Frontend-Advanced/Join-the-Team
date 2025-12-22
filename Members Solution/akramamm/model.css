@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  max-width: 100%;
+  background-color: #F8FFE0;
+}
+
+.content{
+    margin: 24px !important;
+
+}
+
+.navigation-bar{
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.search{
+    width: 250px;
+    padding: 3px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #E7E4E4;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.search input{
+    font-size: 14px;
+    background-color: #E7E4E4;
+    border: none;
+    outline: none; 
+    align-items: center;
+}
+.search input:active,
+.search input:focus{
+    border: none;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.account, .basket{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.material-symbols-outlined{
+    color: #107351;
+    border-radius: 20%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 15px;
+}
+.material-symbols-outlined.rounded1{
+  background-color: #7BFDDE;
+  color: black;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+.material-symbols-outlined.rounded2{
+  background-color: #FAB854;
+  color: black;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+.material-symbols-outlined.rounded3{
+  background-color: #0EBB0A;
+  color: black;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+.material-symbols-outlined.rounded4{
+  background-color: #FA44D2;
+  color:black;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+.material-symbols-outlined.rounded5{
+  background-color: #f02121;
+  color: black;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+.roundedicon {
+    padding: 1px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.rounded{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2px;
+}
+.item-name{
+    padding-right: 12px;
+    padding-left: 12px;
+
+}
+.material-symbols-outlined.rounded{
+    color: #C1C1BD;
+}
+section.ads{
+    margin: 15px;
+    height: 200px;
+    background-color: #D9D9D9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#green_color{
+  color: #107351;
+}
+.line{
+  margin-top: 3px;
+  border: 1px solid #107351;
+  width: 180px;
+}
+.line2{
+  margin-top: 3px;
+  border: 1px solid #107351;
+  width: 135px;
+}
+.line3{
+  margin-top: 3px;
+  border: 1px solid #107351;
+  width: 220px;
+}
+.line4{
+  margin-top: 3px;
+  border: 1px solid #107351;
+  width: 175px;
+}
+.line5{
+  margin-top: 3px;
+  border: 1px solid #107351;
+  width: 80px;
+}
+.line6{
+  margin-top: 3px;
+  border: 1.86px solid #107351;
+  width: 300px;
+}
+.poster{
+  height: 200px;
+
+}
+#section_title{
+  font-weight: 600;
+}
+
+.card_list{
+  justify-content: flex-start;
+}
+.card_information{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.cat_btn{
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #555;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 70%;
+  cursor: pointer;
+}
+.below_card{
+  border: 1px solid #539C7A;
+  background-color: #539C7A;
+  padding: 70px;
+  margin-top: 5px;
+  margin-bottom: 80px;
+  display: flex;
+}
+.below_card_box{
+  border: 1px solid #AAA6A6;
+  background-color: #AAA6A6;
+  border-radius: 20%;
+  width: 20%;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 65px;
+}
+.vitamin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_part{
+  border: 1px solid #107351;
+  background-color: #107351;
+  height: 320px;
+  margin: 0 !important; 
+}
+
+
+
+
+
+
+
+                                                        /* Carousel CSS */
+
+  .carousel-container {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--lx-gap);
+  
+    .carousel {
+      aspect-ratio: 16/9;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+  
+      .item {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        transition: opacity 0.5s ease-in-out;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+  
+        .caption {
+            display: none;
+          width: 100%;
+          padding: var(--lx-space-01);
+          position: absolute;
+          bottom: 0;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 12px;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+  
+        &.active {
+          opacity: 1;
+          display: block;
+        }
+      }
+    }
+  
+    .btn {
+      padding: 1em 2em;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 900;
+      color: #10100e;
+      background-color: #ffffe6;
+      transition: transform 0.2s ease-in-out;
+  
+      &:active,
+      &:focus {
+        transform: translateY(-50%) scale(0.9);
+      }
+  
+      &:hover {
+        transform: translateY(-50%) scale(0.96);
+      }
+    }
+  
+    .prev {
+      left: -2%;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+    .next {
+        right: -2%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  
+    .dots {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  
+      .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        background-color: #242421;
+        transition: background-color 0.2s ease;
+  
+        &.active,
+        &:hover {
+          background-color: #ffffe6;
+        }
+      }
+    }
+  }
+
+                                                    /* Card CSS */
+.articles{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article {
+  width: 80%;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  margin-right: 50px;
+  margin-left: 50px;
+  
+}
+.articles_categorie_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articles.categorie{
+  width: 60%;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+article h2 {
+  margin: 0 0 18px 0;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+                                         /* Footer part */
+                                         
+.footer_part{
+  color: white;
+  margin: 100px;
+  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.subscribtion{
+  display: flex;
+  margin: 90px;
+  border-radius: 50%;
+  width: 40%;
+  justify-content: space-around;
+}
+#red_button{
+  font-size: 14px;
+  padding: 16px;
+  background-color: #FC9494;
+  border-radius: 50%;
+  color: #FCF7F7;
+  border: none;
+  outline: none; 
+  align-items: center;
+}

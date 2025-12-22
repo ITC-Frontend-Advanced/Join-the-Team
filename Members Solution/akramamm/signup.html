@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <a class="link" href="index.html"><h3 class="logo">PharmaZ</h3></a>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 600px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+      }
+.form-container {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .pic img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      h2 {
+        color: #333;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #f5f5f5;
+        font-size: 16px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #bdadad;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-family: "Poppins", sans-serif;
+      }
+button {
+        width: 100%;
+        padding: 12px;
+        background-color: #01402d;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #01402d;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+a {
+        color: #01402d;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+
+      a:hover {
+        opacity: 0.8;
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="pic">
+      <img src="image/signup.webp" alt="Image" />
+    </div>
+    <div class="container">
+      <div class="form-container">
+        <h2>Create Account</h2>
+        <input id="name" type="text" placeholder="Full Name" required />
+        <input id="email" type="email" placeholder="Email Address" required />
+        <input id="password" type="password" placeholder="Password" />
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </div>
+  </body>
+</html>
