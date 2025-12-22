@@ -1,0 +1,293 @@
+*{  
+    margin: 0;
+    
+}
+body{
+  
+    overflow-x: hidden;
+}
+header {
+    
+margin-top: 10px;     
+display: flex;
+justify-content: space-between; 
+align-items: center;
+padding: 15px;
+
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+
+
+/* Semi-transparent background */
+color: white;
+}
+.gymfit h1 {
+font-style:inherit;
+margin-left: 30px;
+font-size: 30px;
+color: orangered;
+}
+.menu {
+display: flex;
+gap: 20px; /* Space between menu items */
+}
+
+.menu a {
+text-decoration: none;
+color: white;
+font-size: 20px;
+transition: all 0.3s ease;
+
+}
+.menu a:hover{
+transform: translateY(-8px);
+}
+.log-in {
+display: flex;
+gap: 10px;
+margin-right: 30px;
+}
+
+/* Login Buttons */
+.log-in button, .owner-users button ,.aboutmang button {
+
+padding: 7px;
+
+/* background: none; */
+color: white;
+cursor: pointer;
+font-size: 20px;
+font-style: normal;
+border-radius: 15px;
+transition: all 0.3s ease;
+
+
+}
+button:hover{
+transform: translateY(-8px) ;
+}
+/* .log-in button :hover{
+transform: translateY(-8px);
+} */
+
+#sign-in,#owner{
+background: none;
+border-color:orangered;
+}
+#sign-up,#users  ,#joinowner{
+border: none;
+background-color: orangered;
+} 
+.pic {
+
+width: 100%;
+height: 800px; 
+
+
+
+
+background-image: url('photo/young-man-sportswear-exercise-class-gym.jpg') ; /* Replace with your image path */
+background-size:cover;  
+background-position: center;
+background-attachment: fixed;
+
+display: flex;
+align-items: center;
+justify-content: center;  
+color: white; /* Ensures text is visible */
+margin-bottom: 80px;
+}
+
+
+
+.pic div {
+position: relative; 
+z-index: 1; /* Ensures text/buttons appear above overlay */
+}
+
+.about{
+    max-width: 600px;
+    
+   
+    
+ position: relative; 
+right: 350px;
+bottom: 50px; 
+ /* right: 500px;
+ left: 100px;
+bottom: 50px;  */
+
+}
+
+.about h1{
+font-size: 35px;
+margin-top: 10px;
+color: orangered;
+
+}
+.about P{
+font-size: 20px;
+margin-top: 10px
+}
+.owner-users{
+display: flex;
+gap: 10px;
+margin-top:30px;
+
+}
+.about-us1{
+
+margin: 58px;
+min-height: 463,211px;
+
+display: flex;
+
+justify-content: center;
+gap: 60px;
+}
+.about-us1 >div{
+    max-width: 630px;
+   min-height: 463,211px;
+
+}
+.about-us1 .manger{
+    display: flex;
+    justify-content: center;
+
+background-color: orangered;
+border: 2px  ;
+border-radius:50px  0px 0px 50px ;
+
+}
+#mangerpic{
+
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+max-width: 598px;
+min-height: 399px;
+margin-top: 32px;
+margin-bottom: 32px;
+margin-left: 32px;
+border-radius:50px  0px 0px 50px ;
+transition: all 0.3s ease;
+justify-content: center;
+
+}
+ .about-us1 .manger #mangerpic :hover img{
+transform: translate(-8px);
+
+
+} 
+.aboutmang{
+
+max-width:  598px;
+
+}
+.aboutmang h2{
+align-self: stretch;
+color: #0E1428;
+
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+/* font-weight: ; */
+line-height: normal;
+margin-bottom: 40px;
+
+
+
+}
+.aboutmang p{
+align-self: stretch;
+color: #000;
+
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 24px;
+}
+.aboutmang ul {
+align-self: stretch;
+color: #000;
+
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+list-style:none; /* Remove default bullets */
+padding-left: 0;
+margin-bottom: 40px;
+}
+.aboutmang ul li::before {
+content: url('photo/Vector.svg'); /* Custom icon */
+margin-right: 8px;
+}
+/* .about-us1 .aboutmang button :hover{
+transform: translateY(-8px)
+} */
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .log-in {
+        margin-top: 10px;
+    }
+    .pic {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 28px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .owner-users {
+        flex-direction: column;
+    }
+    .about-us1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .manger, .aboutmang {
+        width: 100%;
+        height: ;
+    }
+    #mangerpic {
+        border-radius: 20px;
+    }
+    .about-us1 > div, .manger {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gymfit h1 {
+        font-size: 24px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+    .about h1 {
+        font-size: 24px;
+    }
+    .about p {
+        font-size: 14px;
+    }
+    button {
+        font-size: 16px;
+    }
+}

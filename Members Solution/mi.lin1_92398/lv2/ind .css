@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    min-height: 100vh;
+    padding: 40px;
+    color: #e5e7eb;
+}
+
+/* Container */
+.container {
+    background-color: #020617;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(79, 70, 229, 0.3);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titles */
+h2 {
+    color: #c7d2fe;
+    margin-bottom: 15px;
+    border-left: 5px solid #6366f1;
+    padding-left: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #4f46e5;
+    transform: scale(1.05);
+}
+
+/* Inputs */
+input {
+    padding: 9px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+/* List */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li {
+    background: #020617;
+    border: 1px solid #334155;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Delete button */
+li button {
+    background-color: #ef4444;
+}
+
+li button:hover {
+    background-color: #dc2626;
+}
+
+/* Paragraph */
+p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e5e7eb;
+}
